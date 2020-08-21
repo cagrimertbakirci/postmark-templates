@@ -14,113 +14,104 @@ These templates are built and maintained using [MailMason](https://github.com/wi
 
 ## CSS & Inlining
 
-There are two sets of templates here. The first set is in the `/templates` folder and contains the base templates with the CSS all contained in a style block. In this state, they're easier to edit, but they'll have limited compatibility with email clients. The other set in `/templates_inlined` has the same templates but with the CSS already inlined. They'll be a bit more tedious to make changes to, but you won't need to use anything to inline the CSS.
+There are two sets of templates here. The first set is in the `/templates` folder and contains the base templates with the CSS all contained in a style block. In this state, they're easier to edit, but they'll have limited compatibility with email clients. The other set in `/templates-inlined` has the same templates but with the CSS already inlined. They'll be a bit more tedious to make changes to, but you won't need to use anything to inline the CSS.
 
 ### Inline the CSS
 For client compatibility, HTML emails should always be inlined before sending. Here are a couple of tools for doing that:
 
 * [Postmark Style Merge](https://github.com/wildbit/style-merge)
-* [Premailer](https://github.com/peterbe/premailer)
+* [Premailer](https://github.com/premailer/premailer)
 
 If you choose to send your emails with [Postmark](http://postmarkapp.com), each time you send we will automagically inline the CSS for you.
 
 ## The Templates
 
-The templates are listed below and have all been tested for consistency in the following email clients:
+Each template comes in three different generic layout variations: Basic, Basic full, and Plain. This gives you a starting point so that you can customize your templates to match your brand.
 
-* Desktop
-  * Apple Mail 8, 9, 10
-  * Outlook 2007, 2010, 2011, 2013, 2016
-  * Windows 10 Mail
-* Mobile
-  * Gmail App (Android)
-  * iPhone 5s (iOS 8)
-  * iPhone 6s
-  * iPhone 6s plus
-  * iPad (Retina)
-  * iPad Mini
-* Web
-  * AOL
-  * Gmail
-  * Outlook.com
-  * Yahoo
+<img src="https://github.com/wildbit/postmark-templates/raw/master/media/starter-templates@2x.png" max-width="100%" alt="Starter templates side-by-side: Basic, basic full, and plain">
+<img src="https://github.com/wildbit/postmark-templates/raw/master/media/dark-mode@2x.png" max-width="100%" alt="Dark mode compatibility">
+
 
 ### Welcome
 
-Send a welcome email to users after they sign up.
+  Send a welcome email to users after they sign up.
 
-* [Welcome email best practices guide](https://postmarkapp.com/guides/welcome-email-best-practices)
-* [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/welcome.html)
-* [Litmus test results &rarr;](https://litmus.com/pub/24f5dc8)
+  * 💌 Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/welcome/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/welcome/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/welcome/content.html)
+  * 📔 [Welcome email best practices guide](https://postmarkapp.com/guides/welcome-email-best-practices)
 
-### Reset password
-
-* [Reset password best practices guide](https://postmarkapp.com/guides/password-reset-email-best-practices)
-
-#### Reset Password
+### Reset Password
 
   Send users a link to reset their password.
-  
-  * [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/password_reset.html)
-  * [Litmus test results &rarr;](https://litmus.com/pub/3d48973)
 
-#### Reset Password Help
+  * 💌 Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/password-reset/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/password-reset/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/password-reset/content.html)
+  * 📔 [Reset password best practices guide](https://postmarkapp.com/guides/password-reset-email-best-practices)
+
+### Reset Password Help
 
   Help users reset their password if they can’t remember their email.
 
-  * [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/password_reset_help.html)
-  * [Litmus test results &rarr;](https://litmus.com/pub/5c3766d)
+  * 💌 Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/password-reset-help/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/password-reset-help/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/password-reset-help/content.html)
+  * 📔 [Reset password best practices guide](https://postmarkapp.com/guides/password-reset-email-best-practices)
 
-### Receipts/Invoices
-
-[Receipt and invoices best practices guide](https://postmarkapp.com/guides/receipt-and-invoice-email-best-practices)
-
-#### Receipt
+### Receipt
 
   Send a receipt to users after they made a purchase.
 
-  * [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/receipt.html)
-  * [Litmus test results &rarr;](https://litmus.com/pub/4778613)
+  * 💌 Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/receipt/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/receipt/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/receipt/content.html)
+  * 📔 [Receipt and invoices best practices guide](https://postmarkapp.com/guides/receipt-and-invoice-email-best-practices)
 
-#### Invoice
+### Invoice
 
   Request payment from a user.
 
-  * [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/invoice.html)
-  * [Litmus test results &rarr;](https://litmus.com/pub/eed3e67)
+  * 💌 Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/invoice/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/invoice/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/invoice/content.html)
+  * 📔 [Receipt and invoices best practices guide](https://postmarkapp.com/guides/receipt-and-invoice-email-best-practices)
 
 ### Comment notification
 
 Notify users of new comments by other users.
 
-**Note:** Comment notification isn't the prettiest preview because it's just Mustachio. Since almost all content in these emails is dynamic, they don't look good without real content. So don't worry though, that's how they're supposed to look.
+**Note:** Comment notification isn't the prettiest preview because it's just [Mustachio](https://github.com/wildbit/mustachio). Since almost all content in this email is dynamic, it won't look good without real content. Don't worry though, that's how it's supposed to look.
 
-* [Comment notification best practices guide](https://postmarkapp.com/guides/comment-notification-email-best-practices)
-* [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/comment_notification.html)
-* [Litmus test results &rarr;](https://litmus.com/pub/7ea5b37)
+  * 💌 Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/comment-notification/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/comment-notification/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/comment-notification/content.html)
+  * 📔 [Comment notification best practices guide](https://postmarkapp.com/guides/comment-notification-email-best-practices)
 
-### Trial expiration
-
-[Trial expiration email best pracitces](https://postmarkapp.com/guides/trial-expiration-email-best-practices)
-
-#### Trial Expiring
+### Trial Expiring
 
   Let users know when their trial is about to expire.
-  
-  * [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/trial_expiring.html)
-  * [Litmus test results &rarr;](https://litmus.com/pub/80d7c42)
 
-#### Trial Expired
+  * 💌 Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/trial-expiring/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/trial-expiring/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/trial-expiring/content.html)
+  * 📔 [Trial expiration email best practices](https://postmarkapp.com/guides/trial-expiration-email-best-practices)
+
+### Trial Expired
 
   Let users know when their expired trial.
 
-  * [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/trial_expired.html)
-  * [Litmus test results &rarr;](https://litmus.com/pub/4412f89)
+  * 💌 Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/trial-expired/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/trial-expired/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/trial-expired/content.html)
+  * 📔 [Trial expiration email best pracitces](https://postmarkapp.com/guides/trial-expiration-email-best-practices)
 
 ### User Invitation
 
   Help users invite others to use your software.
 
-* [User invitation email best practices](https://postmarkapp.com/guides/user-invitation-email-best-practices)
-* [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/user_invitation.html)
-* [Litmus test results &rarr;](https://litmus.com/pub/6a3336f)
+  * 💌 Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/user-invitation/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/user-invitation/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/user-invitation/content.html)
+  * 📔 [User invitation email best practices](https://postmarkapp.com/guides/user-invitation-email-best-practices)
+
+
+We've also made sure that these have been tested for consistency in the following email clients:
+
+* Desktop
+  * Apple Mail 9, 10, 11
+  * Outlook 2007, 2010, 2011, 2013, 2016
+  * Windows 10 Mail
+* Mobile
+  * Gmail App (Android)
+  * iPhones 6, 7, 8, SE, X
+  * iPad (Retina)
+  * iPad Mini
+  * iPad Pro
+* Web
+  * AOL
+  * Gmail
+  * Outlook.com
+  * Yahoo
